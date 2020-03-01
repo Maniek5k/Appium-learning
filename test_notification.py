@@ -38,7 +38,8 @@ class TestowanieAplikacji(unittest.TestCase):
                 body = True
         self.assertTrue(title)
         self.assertTrue(body)
-
+        self.driver.back()
+        
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestowanieAplikacji)
